@@ -7,6 +7,7 @@ function createContactPage() {
   sectionTitle.textContent = 'Contact';
 
   const address = document.createElement('p');
+  address.classList.add('address');
   address.textContent =
     'Visit us in person at 1234 Oysters Rd, Oyster, USA, 12345';
 
@@ -21,6 +22,7 @@ function createContactPage() {
 
   const formTitle = document.createElement('h3');
   formTitle.textContent = 'Send us a message';
+  form.appendChild(formTitle);
 
   const nameLabel = document.createElement('label');
   nameLabel.setAttribute('for', 'name');
@@ -30,6 +32,7 @@ function createContactPage() {
   nameInput.setAttribute('id', 'name');
   nameInput.classList.add('form-input');
   nameInput.setAttribute('placeholder', 'Name');
+  nameInput.setAttribute('minlength', 2);
   nameInput.setAttribute('autocomplete', 'off');
   nameInput.setAttribute('required', true);
   nameLabel.appendChild(nameInput);
@@ -43,6 +46,7 @@ function createContactPage() {
   phoneInput.classList.add('form-input');
   phoneInput.setAttribute('placeholder', '123-456-7890');
   phoneInput.setAttribute('autocomplete', 'off');
+  phoneInput.setAttribute('pattern', '\d{3}[\-]\d{3}[\-]\d{4}')
   phoneInput.setAttribute('required', true);
   phoneLabel.appendChild(phoneInput);
 
@@ -102,39 +106,3 @@ function renderContact() {
 
 export default renderContact;
 
-/*
-
-<section id='contact'>
-    <h2 class='section-title'>Contact</h2>
-    <p>Visit us in person at 1234 Oysters Rd, Oyster, USA, 12345</p>
-    <a href='tel:1234567'>Call us at 123-456-7891</a>
-    <form action='/' method='post' class='contact-form'>
-        <h3>Send us a message</h3>
-        <div class='form-group'>
-            <label for='name'>
-                <input type='text' name='name' id='name' class='form-input' placeholder='Name' autocomplete='off' required>
-            </label>
-        </div>
-        <div class='form-group'>
-            <label for='phone'>
-                <input type='tel' name='phone' id='phone' class='form-input' placeholder='123-456-7890' autocomplete='off' required>
-            </label>
-        </div>
-        <div class='form-group'>
-            <label for='email'>
-                <input type='email' name='email' id='email' class='form-input' placeholder='email@email.com' autocomplete='off' required>
-            </label>
-        </div>
-        <div class='form-group'>
-            <label for='message'>
-                <textarea name='message' id='message' class='form-input' cols='30' rows='10' required autocomplete='off' minlength='10' placeholder='Message'></textarea>
-            </label>
-        </div>
-        <div class='form-group'>
-            <button type='submit'>Send</button>
-        </div>
-    </form>
-
-</section>
-
-*/

@@ -8,7 +8,7 @@ function createHeader() {
 
     const logo = document.createElement('h1');
     logo.classList.add('logo');
-    logo.textContent = 'HealthFully';
+    logo.textContent = 'Oyster\'s';
 
     header.appendChild(logo);
     header.appendChild(createNavbar());
@@ -79,7 +79,7 @@ function createFooter() {
   
     const copyright = document.createElement('small');
     copyright.classList.add('copyright');
-    copyright.textContent = `Created by Štěpán Š. ${new Date().getFullYear()}. All Rights Reserved.`;
+    copyright.textContent = `Created by Štěpán Š. © ${new Date().getFullYear()}. All Rights Reserved.`;
   
     footer.appendChild(copyright);
   
