@@ -4,7 +4,7 @@ function createHomePage() {
 
     const sectionTitle = document.createElement('h2');
     sectionTitle.classList.add('section-title');
-    sectionTitle.textContent = 'Welcome to HealthFully';
+    sectionTitle.textContent = 'Welcome to Oyster\'s';
 
     const oystersImage = document.createElement('img');
     oystersImage.src = './images/raw-oysters.jpg';

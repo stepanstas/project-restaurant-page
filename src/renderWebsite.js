@@ -8,7 +8,7 @@ function createHeader() {
 
     const logo = document.createElement('h1');
     logo.classList.add('logo');
-    logo.textContent = 'HealthFully';
+    logo.textContent = 'Oyster\'s';
 
     header.appendChild(logo);
     header.appendChild(createNavbar());
