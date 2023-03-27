@@ -79,7 +79,7 @@ function createFooter() {
   
     const copyright = document.createElement('small');
     copyright.classList.add('copyright');
-    copyright.textContent = `Created by Štěpán Š. ${new Date().getFullYear()}. All Rights Reserved.`;
+    copyright.textContent = `Created by Štěpán Š. © ${new Date().getFullYear()}. All Rights Reserved.`;
   
     footer.appendChild(copyright);
   

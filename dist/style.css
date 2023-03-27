@@ -127,6 +127,7 @@ main {
     font-weight: bold;
     background-color: var(--tertiary-bg-color);
     padding-block: 2rem;
+    padding-inline: 2rem;
     margin-block: 2rem;
     block-size: 100%;
     max-block-size: auto;
@@ -215,6 +216,7 @@ main {
 .contact-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     inline-size: 100%;
     max-inline-size: 500px;
@@ -223,6 +225,10 @@ main {
 .contact-form h3 {
     text-align: center;
     font-size: 1.5rem;
+}
+
+.address {
+    text-align: center;
 }
 
 .form-group {
