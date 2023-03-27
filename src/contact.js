@@ -21,6 +21,7 @@ function createContactPage() {
 
   const formTitle = document.createElement('h3');
   formTitle.textContent = 'Send us a message';
+  form.appendChild(formTitle);
 
   const nameLabel = document.createElement('label');
   nameLabel.setAttribute('for', 'name');
@@ -30,6 +31,7 @@ function createContactPage() {
   nameInput.setAttribute('id', 'name');
   nameInput.classList.add('form-input');
   nameInput.setAttribute('placeholder', 'Name');
+  nameInput.setAttribute('minlength', 2);
   nameInput.setAttribute('autocomplete', 'off');
   nameInput.setAttribute('required', true);
   nameLabel.appendChild(nameInput);
@@ -43,6 +45,7 @@ function createContactPage() {
   phoneInput.classList.add('form-input');
   phoneInput.setAttribute('placeholder', '123-456-7890');
   phoneInput.setAttribute('autocomplete', 'off');
+  phoneInput.setAttribute('pattern', '\d{3}[\-]\d{3}[\-]\d{4}')
   phoneInput.setAttribute('required', true);
   phoneLabel.appendChild(phoneInput);
 
