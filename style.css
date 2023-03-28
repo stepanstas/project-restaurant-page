@@ -146,6 +146,7 @@ main {
     object-position: center;
     max-block-size: 300px;
     max-inline-size: 300px;
+    border-radius: 50%;
 }
 
 /* Menu page */
