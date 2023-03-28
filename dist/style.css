@@ -272,7 +272,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #B38E67;
+    background-color: #b8946e;
 }
 
 @media (max-width: 1001px) {
